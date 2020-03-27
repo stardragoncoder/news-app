@@ -1,8 +1,8 @@
 import { NewsService } from "./../../services/news.service";
 import { Component, OnInit } from "@angular/core";
-import { News } from "src/app/model/news";
+import { News } from "../../model/news";
 
-@Component({
+@Component({ 
   selector: "app-primary",
   templateUrl: "./primary.component.html",
   styleUrls: ["./primary.component.scss"]
