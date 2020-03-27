@@ -1,0 +1,46 @@
+$button-bg: green;
+$button-fg: white;
+$shadow-attr: 3px 3px 10px 3px lightskyblue, -3px -3px 10px 3px lightskyblue;
+$button-shadow: 1px 1px 10px 1px lightgreen, -1px -1px 10px 1px lightgreen;
+
+.container {
+  height: 92vh;
+  background-image: url("../../../assets/news3.jpg");
+  display: grid;
+  grid-template-rows: 10vh 36vh 8vh 34vh;
+  grid-template-columns: 10% 10% 60% 10% 10%;
+  .button1 {
+    grid-area: b1;
+    text-align: center;
+  }
+  .content {
+    grid-area: C;
+    padding: 20px 20px 20px 20px;
+    .example-card {
+      height: fit-content;
+      background-image: url("../../../assets/grey.jpg");
+      background-position: center top;
+      .mat-card-image {
+        height: 40vh;
+        width: 500px;
+        margin-left: 100px;
+      }
+    }
+    .example-card:hover {
+      box-shadow: $shadow-attr;
+    }
+  }
+  .button2 {
+    text-align: center;
+    grid-area: b2;
+  }
+  button {
+    background-color: $button-bg;
+    color: $button-fg;
+  }
+  button:hover {
+    transform: scale(1.15);
+    background: cadetblue !important;
+    box-shadow: $button-shadow;
+  }
+}

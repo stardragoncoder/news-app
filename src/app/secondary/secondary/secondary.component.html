@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="button1">
+      <button mat-raised-button (click)="prev()">prev</button>
+    </div>
+    <div class="content">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>{{ news.articles[index].title }}</mat-card-title>
+          <mat-card-subtitle>{{
+            news.articles[index].description
+          }}</mat-card-subtitle>
+        </mat-card-header>
+        <img
+          mat-card-image
+          src="{{ news.articles[index].urlToImage }}"
+          alt="Image has been removed due to @copyright violations."
+        />
+        <mat-card-content>
+          {{ news.articles[index].content }}
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="button2">
+      <button mat-raised-button (click)="next()">next</button>
+    </div>
+  </div>
+  

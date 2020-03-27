@@ -1,0 +1,41 @@
+$bck-col: darkblue;
+$btn-bck-col: midnightblue;
+$text-col: white;
+
+.container {
+  height: 100vh;
+  mat-toolbar {
+    height: 8vh;
+    background-color: $bck-col;
+    color: $text-col;
+
+    .icon {
+      background-color: crimson;
+      padding: 8px;
+      text-shadow: 8px 8px 8px black;
+      border-radius: 40px;
+      transition: transform 1s;
+    }
+    .icon:hover {
+      box-shadow: 1px 1px 5px greenyellow, -1px -1px 5px greenyellow;
+      transform: rotateY(40deg) scale(1.2);
+    }
+    button {
+      background-color: $btn-bck-col;
+      color: $text-col;
+      margin-left: 20px;
+    }
+    button:hover {
+      height: 40px;
+      box-shadow: 2px 2px 5px lightskyblue;
+      background-color: $text-col;
+      color: $bck-col;
+    }
+    .active-link {
+      background-color: cadetblue;
+    }
+    .space {
+      flex: 1 1 auto;
+    }
+  }
+}
