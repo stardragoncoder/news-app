@@ -1,0 +1,9 @@
+@import "../../common-style";
+
+.container {
+  grid-template-areas:
+    ". .  . .  ."
+    ". .  C .  ."
+    ". b1 C b2 ."
+    ". .  C .  .";
+}

@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="header">
+    <mat-toolbar>
+      <span class="icon">{{ title | uppercase }}</span>
+
+      <span class="space"></span>
+
+      <button mat-raised-button routerLink="/topnews" routerLinkActive="active-link">Top News</button>
+      <button mat-raised-button routerLink="/news-search" routerLinkActive="active-link">News Search</button>
+      
+    </mat-toolbar>
+  </div>
+
+  <div class="content">
+    <router-outlet></router-outlet>
+    
+  </div>
+</div>
